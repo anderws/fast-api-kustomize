@@ -3,6 +3,7 @@ namespace: staging
 resources:
   - ../base
   - namespace.yaml
+  - service.yaml
 images:
   - name: nginx
     newTag: latest

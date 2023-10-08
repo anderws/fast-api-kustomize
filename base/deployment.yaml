@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: fast-api
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: fast-api
   template:
     metadata:
       labels:
-        app: nginx
+        app: fast-api
     spec:
       containers:
-      - name: nginx
-        image: nginx
+      - name: fast-api
+        image: anderws10/fast-api:v1
         resources:
           limits:
             memory: "128Mi"
