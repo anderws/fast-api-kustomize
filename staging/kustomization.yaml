@@ -1,0 +1,8 @@
+---
+namespace: staging
+resources:
+  - ../base
+  - namespace.yaml
+images:
+  - name: nginx
+    newTag: latest
